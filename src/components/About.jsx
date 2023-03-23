@@ -39,13 +39,11 @@ const About = () => {
 			<motion.p
 				variants={fadeIn("", "", 0.1, 1)}
 				className="mt-4 text-secondary text-[17px] max-w">
-				Possessing a high ambition of being a full-stack developer after working
-				as a frontend engineer for some time, currently, I am expertizing in
-				backend engineering with AWS and serverless architecture. Taking a
-				problem, solving it, and then making it work using coding always gives
-				me great pleasure. Moreover, as I got to taste the flavor of both the
-				frontend and backend parts, I can easily visualize and make a bridge
-				between them while working on any project now.
+				I'm a skilled full-stack developer with experience in JavaScript, Pyhton, and
+				TypeScript, and expertise in AWS, React, Node.js, MongoDB, and Terraform.
+				I'm a quick learner and collaborate closely with clients to create
+				efficient, scalable, and user-friendly solutions that solve real-world
+				problems. So, let's work together to bring your ideas to life!
 			</motion.p>
 			<div className="mt-20 flex flex-wrap gap-10">
 				{services.map((service, index) => (

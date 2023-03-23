@@ -32,7 +32,11 @@ const Navbar = () => {
 								active === link.title ? "text-white" : "text-secondary"
 							}
 							hover:text-white text=[18px] font-medium cursor-pointer`}>
-							<a href={`#${link.id}`}>{link.title}</a>
+							<a
+								href={link.link ? link.link : `#${link.id}`}
+								target={link.link ? "_blank" : "_self"}>
+								{link.title}
+							</a>
 						</li>
 					))}
 				</ul>
