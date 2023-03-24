@@ -11,7 +11,7 @@ const ServiceCard = ({ index, title, icon }) => {
 		<Tilt className="xs:w-[250px] w-full">
 			<motion.div
 				variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-				className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card">
+				className="w-full green-red-gradient p-[1px] rounded-[20px] shadow-card">
 				<div
 					options={{
 						max: 45,
@@ -38,7 +38,7 @@ const About = () => {
 			</motion.div>
 			<motion.p
 				variants={fadeIn("", "", 0.1, 1)}
-				className="mt-4 text-secondary text-[17px] max-w">
+				className="mt-4 text-[#353535] dark:text-secondary text-[17px] max-w">
 				I'm a skilled full-stack developer with experience in JavaScript, Pyhton, and
 				TypeScript, and expertise in AWS, React, Node.js, MongoDB, and Terraform.
 				I'm a quick learner and collaborate closely with clients to create
