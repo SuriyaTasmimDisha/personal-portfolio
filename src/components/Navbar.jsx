@@ -36,7 +36,7 @@ const Navbar = () => {
 									? "text-red-100 dark:text-red-100"
 									: "text-[#353535] dark:text-secondary"
 							}
-							hover:text-red-100 text=[18px] font-medium cursor-pointer`}
+							hover:text-red-100 dark:hover:text-red-100 text=[18px] font-medium cursor-pointer`}
 							onClick={() => {
 								setActive(link.title);
 							}}>
