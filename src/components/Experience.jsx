@@ -6,10 +6,7 @@ import { motion } from "framer-motion";
 import "react-vertical-timeline-component/style.min.css";
 import { styles } from "../styles";
 import { experiences } from "../constants";
-import { textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
-import { useEffect, useState } from "react";
-import useDarkSide from "../hook/useDarkSide";
 
 const ExperienceCard = ({ experience }) => {
 	return (
@@ -71,4 +68,4 @@ const Experience = () => {
 	);
 };
 
-export default SectionWrapper(Experience, "work");
+export default SectionWrapper(Experience, "experience");
