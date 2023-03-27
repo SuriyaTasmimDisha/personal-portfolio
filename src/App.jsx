@@ -23,8 +23,8 @@ const App = () => {
 				<Experience />
 				<Tech />
 				<Works />
-				<Feedbacks />
-				<div className="bg-primary relative z-0">
+				{/* <Feedbacks /> */}
+				<div className="bg-primary relative w-full h-screen mx-auto z-0">
 					<Contact />
 					<StarsCanvas />
 				</div>

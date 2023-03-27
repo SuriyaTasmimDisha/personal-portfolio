@@ -66,40 +66,40 @@ const Contact = () => {
 				<form
 					ref={formRef}
 					onSubmit={handleSubmit}
-					className="mt-10 flex flex-col gap-8">
+					className="mt-12 flex flex-col gap-8">
 					<label className="flex flex-col">
-						<span className="text-white font-medium mb-3">Your Name</span>
+						<span className="text-white font-medium mb-4">Your Name</span>
 						<input
 							type="text"
 							name="name"
 							value={form.name}
 							onChange={handleChange}
 							placeholder="What's your name?"
-							className="bg-tertiary py-3 px-6 placeholder:text-secondary
+							className="bg-tertiary py-4 px-6 placeholder:text-secondary
             text-white rounded-lg outline-none border-none font-medium"
 						/>
 					</label>
 					<label className="flex flex-col">
-						<span className="text-white font-medium mb-3">Your Email</span>
+						<span className="text-white font-medium mb-4">Your Email</span>
 						<input
 							type="email"
 							name="email"
 							value={form.email}
 							onChange={handleChange}
 							placeholder="What's your email?"
-							className="bg-tertiary py-3 px-6 placeholder:text-secondary
+							className="bg-tertiary py-4 px-6 placeholder:text-secondary
             text-white rounded-lg outline-none border-none font-medium"
 						/>
 					</label>
 					<label className="flex flex-col">
-						<span className="text-white font-medium mb-3">Your Message</span>
+						<span className="text-white font-medium mb-4">Your Message</span>
 						<textarea
 							rows="7"
 							name="message"
 							value={form.message}
 							onChange={handleChange}
 							placeholder="What's your message?"
-							className="bg-tertiary py-3 px-6 placeholder:text-secondary
+							className="bg-tertiary py-4 px-6 placeholder:text-secondary
             text-white rounded-lg outline-none border-none font-medium"
 						/>
 					</label>
