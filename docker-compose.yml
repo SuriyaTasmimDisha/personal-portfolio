@@ -1,0 +1,26 @@
+version: '3.8'
+
+networks:
+  global_network:
+    external: true
+
+services:
+  disha_portfolio:
+    image: 'node:16.15-alpine3.15'
+    container_name: disha_portfolio
+    restart: unless-stopped
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      -  "5173:5173"
+      # -  "3003:3003"
+    networks:
+      - global_network
+
+  # redis:
+  #   image: 'redis:alpine'
+  #   ports:
+  #     - 6379:6379
+  #   networks:
+  #     - global_network
