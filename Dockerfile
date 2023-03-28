@@ -1,29 +1,16 @@
-FROM node:16.15-alpine3.15 As development
+FROM node:lts-slim As development
 
 WORKDIR /usr/src/app
 
 COPY package*.json ./
 
-RUN npm install --ignore-scripts --only=development
+RUN npm install --legacy-peer-deps vite@4.2.0
+
+RUN npm install --legacy-peer-deps
 
 COPY . .
 
 RUN npm run build
-
-FROM node:16.15-alpine3.15 As production
-
-ARG NODE_ENV=production
-ENV NODE_ENV=${NODE_ENV}
-
-WORKDIR /usr/src/app
-
-COPY package*.json ./
-
-RUN npm install --ignore-scripts --only=production
-
-COPY . .
-
-COPY --from=development /usr/src/app/dist ./dist
 
 #api port
 EXPOSE 5173
@@ -31,4 +18,4 @@ EXPOSE 5173
 #socket port
 # EXPOSE 3003
 
-CMD ["node", "dist/main"]
+CMD ["npm","run","dev"]
