@@ -6,7 +6,7 @@ networks:
 
 services:
   disha_portfolio:
-    image: 'node:16.15-alpine3.15'
+    image: 'node:lts-slim'
     container_name: disha_portfolio
     restart: unless-stopped
     build:
